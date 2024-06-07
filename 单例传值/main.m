@@ -9,13 +9,19 @@
 #import "PostClass.h"
 #import "RecieveClass.h"
 
+#import "SingletonClass.h"
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        PostClass* postClass = [[PostClass alloc] init];
-        [postClass postValue: @"Singleton Pattern"];
+//        PostClass* postClass = [[PostClass alloc] init];
+//        [postClass postValue: @"Singleton Pattern"];
+//        
+//        RecieveClass* recieveClass = [[RecieveClass alloc] init];
+//        [recieveClass recieveValue];
         
-        RecieveClass* recieveClass = [[RecieveClass alloc] init];
-        [recieveClass recieveValue];
+        SingletonClass* singletonClass = [SingletonClass sharedSingleMethod];
+        NSLog(@"%@", singletonClass);
+        
     }
     return 0;
 }

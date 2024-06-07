@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A2050F082C135A9D00EC5457 /* SingletonByMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2050F072C135A9D00EC5457 /* SingletonByMRC.m */; };
+		A2050F082C135A9D00EC5457 /* SingletonByMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2050F072C135A9D00EC5457 /* SingletonByMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A2050F0B2C135ADE00EC5457 /* SingletonByARC.m in Sources */ = {isa = PBXBuildFile; fileRef = A2050F0A2C135ADE00EC5457 /* SingletonByARC.m */; };
+		A2050F0F2C1364BE00EC5457 /* SingletonClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A2050F0E2C1364BE00EC5457 /* SingletonClass.m */; };
 		A2DDBB7D2AE16F5400CD9336 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DDBB7C2AE16F5400CD9336 /* main.m */; };
 		A2DDBB852AE16F6600CD9336 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DDBB842AE16F6600CD9336 /* DataManager.m */; };
 		A2DDBB882AE16FD900CD9336 /* PostClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A2DDBB872AE16FD900CD9336 /* PostClass.m */; };
@@ -32,6 +33,9 @@
 		A2050F072C135A9D00EC5457 /* SingletonByMRC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonByMRC.m; sourceTree = "<group>"; };
 		A2050F092C135ADE00EC5457 /* SingletonByARC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonByARC.h; sourceTree = "<group>"; };
 		A2050F0A2C135ADE00EC5457 /* SingletonByARC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonByARC.m; sourceTree = "<group>"; };
+		A2050F0C2C1363CA00EC5457 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		A2050F0D2C1364BE00EC5457 /* SingletonClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonClass.h; sourceTree = "<group>"; };
+		A2050F0E2C1364BE00EC5457 /* SingletonClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonClass.m; sourceTree = "<group>"; };
 		A2DDBB792AE16F5400CD9336 /* 单例传值 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "单例传值"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2DDBB7C2AE16F5400CD9336 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A2DDBB832AE16F6600CD9336 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
@@ -56,10 +60,13 @@
 		A2050F052C135A7E00EC5457 /* MRC&ARC */ = {
 			isa = PBXGroup;
 			children = (
+				A2050F0C2C1363CA00EC5457 /* Singleton.h */,
 				A2050F062C135A9D00EC5457 /* SingletonByMRC.h */,
 				A2050F072C135A9D00EC5457 /* SingletonByMRC.m */,
 				A2050F092C135ADE00EC5457 /* SingletonByARC.h */,
 				A2050F0A2C135ADE00EC5457 /* SingletonByARC.m */,
+				A2050F0D2C1364BE00EC5457 /* SingletonClass.h */,
+				A2050F0E2C1364BE00EC5457 /* SingletonClass.m */,
 			);
 			name = "MRC&ARC";
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2050F0F2C1364BE00EC5457 /* SingletonClass.m in Sources */,
 				A2DDBB882AE16FD900CD9336 /* PostClass.m in Sources */,
 				A2050F0B2C135ADE00EC5457 /* SingletonByARC.m in Sources */,
 				A2DDBB7D2AE16F5400CD9336 /* main.m in Sources */,
